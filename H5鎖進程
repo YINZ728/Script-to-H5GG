@@ -1,0 +1,12 @@
+<script>
+function pid() {
+  if(!h5gg.getProcList("進程名")[0]){alert("請先打開遊戲!");pid();}else{      
+    //获取进程pid      
+  var name=h5gg.getProcList("進程名")[0].pid;
+    //设置进程为修改目标
+  h5gg.setTargetProc(name);   
+  h5gg.clearResults();
+    }
+}
+pid();
+  </script>
